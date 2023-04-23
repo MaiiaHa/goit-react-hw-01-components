@@ -20,8 +20,11 @@ import Profile from './profile/Profile';
 import user from '../../src/data/user.json';
 import Statistics from './statistics/Statistics';
 import data from '../../src/data/data.json';
-// import friends from '../../src/data/friends.json';
-// import transaction from '../../src/data/transactions.json';
+import FriendList from './friendlist/FriendList';
+import friends from '../../src/data/friends.json';
+// import FriendListItem from './friendsListItem/FriendListItem';
+import transactions from '../../src/data/transactions.json';
+import TransactionHistory from './transactionHistory/TransactionHistory';
 
 export default function App() {
   return (
@@ -36,6 +39,9 @@ export default function App() {
         likes={user.stats.likes}
       />
       <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends}>{/* <FriendListItem /> */}</FriendList>
+      ;
+      <TransactionHistory items={transactions} />;
     </div>
   );
 }
