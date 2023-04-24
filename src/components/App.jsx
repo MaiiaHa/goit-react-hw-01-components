@@ -16,32 +16,46 @@
 // };
 //===============================
 
-import Profile from './profile/Profile';
 import user from '../../src/data/user.json';
-import Statistics from './statistics/Statistics';
+import Profile from './profile/Profile';
+
 import data from '../../src/data/data.json';
-import FriendList from './friendlist/FriendList';
+import Statistics from './statistics/Statistics';
+
 import friends from '../../src/data/friends.json';
-// import FriendListItem from './friendsListItem/FriendListItem';
+import FriendList from './friendlist/FriendList';
+
 import transactions from '../../src/data/transactions.json';
 import TransactionHistory from './transactionHistory/TransactionHistory';
+
+import Section from './section/Section';
 
 export default function App() {
   return (
     <div>
-      <Profile
-        avatarUrl={user.avatar}
-        name={user.username}
-        location={user.location}
-        tag={user.tag}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      />
-      <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends}>{/* <FriendListItem /> */}</FriendList>
-      ;
-      <TransactionHistory items={transactions} />;
+      <Section title="1 - Social network profile">
+        <Profile
+          avatarUrl={user.avatar}
+          name={user.username}
+          location={user.location}
+          tag={user.tag}
+          followers={user.stats.followers}
+          views={user.stats.views}
+          likes={user.stats.likes}
+        />
+      </Section>
+
+      <Section title="2 - Statistics">
+        <Statistics title="Upload stats" stats={data} />
+      </Section>
+
+      <Section title="3 - FriendList">
+        <FriendList friends={friends} />
+      </Section>
+
+      <Section title="4 - TransactionHistory">
+        <TransactionHistory items={transactions} />
+      </Section>
     </div>
   );
 }
