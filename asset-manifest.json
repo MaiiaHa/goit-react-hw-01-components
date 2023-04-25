@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/MaiiaHa/goit-react-hw-01-components/static/css/main.fb9aff14.css",
-    "main.js": "/MaiiaHa/goit-react-hw-01-components/static/js/main.8d61045f.js",
-    "index.html": "/MaiiaHa/goit-react-hw-01-components/index.html",
-    "main.fb9aff14.css.map": "/MaiiaHa/goit-react-hw-01-components/static/css/main.fb9aff14.css.map",
-    "main.8d61045f.js.map": "/MaiiaHa/goit-react-hw-01-components/static/js/main.8d61045f.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.fb9aff14.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.8d61045f.js",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.fb9aff14.css.map": "/goit-react-hw-01-components/static/css/main.fb9aff14.css.map",
+    "main.8d61045f.js.map": "/goit-react-hw-01-components/static/js/main.8d61045f.js.map"
   },
   "entrypoints": [
     "static/css/main.fb9aff14.css",
